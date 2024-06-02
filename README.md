@@ -96,7 +96,7 @@ For Linux, execute: **python3 (...).py**
 | Original Signal \+ InceptionTime    | **95\.55\% \(1st\)**
 | HYDRA                               | **92\.35\% \(2nd\)**
 ### Gender Estimation (IMU Location: Center)
-| **Method**                          | **Age Group Classification**                 |
+| **Method**                          | **Gender Estimation**                 |
 |:-----------------------------------:|:-----------------------------:|
 | Hand\-crated Feature \+ KNN         | 88\.43\%                     |
 | Hand\-crated Feature \+ NB          | 62\.83\%                     |
@@ -123,6 +123,31 @@ For Linux, execute: **python3 (...).py**
 | Original Signal \+ 1D\-CNN          | 85\.42\%                     |
 | Original Signal \+ InceptionTime    | **98\.69\% \(1st\)** |
 | HYDRA                               | **96\.97\% \(2nd\)** |
+### Age Estimation (IMU Location: Center)
+| **Method**                          | **Age Estimation**        |
+|:-----------------------------------:|:-------------------------:|
+| Hand\-crated Feature \+ GPR         | 7\.99                     |
+| Hand\-crated Feature \+ LR          | 14\.17                    |
+| Hand\-crated Feature \+ SVM         | 9\.25                     |
+| Hand\-crated Feature \+ Ensemble    | 10\.59                    |
+| Hand\-crated Feature \+ DT          | 12\.91                    |
+| Hand\-crated Feature \+ KAM         | 10\.41                    |
+| Autocorrelation Feature \+ GPR      | **6\.98 \(3rd\)**         |
+| Autocorrelation Feature \+ LR       | 12\.86                    |
+| Autocorrelation Feature \+ SVM      | 8\.82                     |
+| Autocorrelation Feature \+ Ensemble | 10\.97                    |
+| Autocorrelation Feature \+ DT       | 13\.21                    |
+| Autocorrelation Feature \+ KAM      | 10\.17                    |
+| Combined Feature \+ GPR             | **5\.58 \(2nd\)**         |
+| Combined Feature \+ LR              | 16\.90                    |
+| Combined Feature \+ SVM             | 7\.05                     |
+| Combined Feature \+ Ensemble        | 9\.30                     |
+| Combined Feature \+ DT              | 12\.18                    |
+| Combined Feature \+ KAM             | 8\.43                     |
+| AE\-GDI \+ 2D\-CNN                  | 16\.04                    |
+| Original Signal \+ 1D\-CNN          | 16\.59                    |
+| Original Signal \+ InceptionTime    | 19\.63                    |
+| HYDRA                               | **0\.46 \(1st\)**         |
 
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
