@@ -25,6 +25,51 @@ The experiments were runned on the author's personal laptop. The configurations 
 - GPU: NVIDIA GeForce RTX 3080 Laptop GPU
 - CUDA Version: 11.7
 - Operating System: Microsoft Windows 11 (version-10.0.22631)
+## Code Structure
+```bash
+IMU_SoftBiometrics
+├─config
+├─data
+│  └─OU_ISIR_Inertial_Sensor
+│      ├─manual_IMUZCenter
+│      │  ├─AE_GDI
+│      │  ├─data_segmented
+│      │  ├─feature_autocorr
+│      │  └─feature_manual
+│      ├─manual_IMUZLeft
+│      │  ├─AE_GDI
+│      │  ├─data_segmented
+│      │  ├─feature_autocorr
+│      │  └─feature_manual
+│      └─manual_IMUZRight
+│          ├─AE_GDI
+│          ├─data_segmented
+│          ├─feature_autocorr
+│          └─feature_manual
+├─main
+├─result
+│  └─OU_ISIR_Inertial_Sensor
+│      ├─manual_IMUZCenter
+│      ├─manual_IMUZLeft
+│      └─manual_IMUZRight
+└─util
+```
+
 ## Datasets
 1. OU-ISIR Inertial Sensor Dataset: http://www.am.sanken.osaka-u.ac.jp/BiometricDB/InertialGait.html
 2. OU-ISIR Similar Action Inertial Dataset: http://www.am.sanken.osaka-u.ac.jp/BiometricDB/SimilarActionsInertialDB.html
+## Usage
+First, activate the local environment and then set the folder containing this README file as the current folder.  
+For Windows, execute: **python (...).py**  
+For Linux, execute: **python3 (...).py**  
+1. Transform facial videos into raw RGB traces: **python "./main/main_DataSegmentation.py"**
+2. Segment the original IMU gait signals into IMU sequences of equal length: **python "./main/main_DataSegmentation.py"**
+3. Transform segmented IMU signals into hand-crafted features: **python "./main/main_IMU2ManualFeature.py"**
+4. Transform segmented IMU signals into autocorrelation features: **python "./main/main_IMU2AutoCorrFeature.py"**
+5. Transform segmented IMU signals into AE-GDI features: **python "./main/main_IMU2AEGDI.py"**
+6. Evaluate the performance of included algorithms for soft biometrics: **python "./main/main_Benchmark.py"**
+### Contact
+If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
+## Authors and acknowledgment
+This master thesis was supervised by Dr. Mohamed Elgendi (ETH Zurich), Prof. Dr. Carlo Menon (ETH Zurich), and Prof. Dr. Rosa Chan (City University of Hong Kong). The code was developed by Shuo Li. Also thank to all my colleagues and providers of datasets for the continuous help!
+## License - MIT License.
