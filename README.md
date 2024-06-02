@@ -54,7 +54,6 @@ IMU_SoftBiometrics
 │      └─manual_IMUZRight
 └─util
 ```
-
 ## Datasets
 1. OU-ISIR Inertial Sensor Dataset: http://www.am.sanken.osaka-u.ac.jp/BiometricDB/InertialGait.html
 2. OU-ISIR Similar Action Inertial Dataset: http://www.am.sanken.osaka-u.ac.jp/BiometricDB/SimilarActionsInertialDB.html
@@ -67,6 +66,35 @@ For Linux, execute: **python3 (...).py**
 3. Transform segmented IMU signals into autocorrelation features: **python "./main/main_IMU2AutoCorrFeature.py"**
 4. Transform segmented IMU signals into AE-GDI features: **python "./main/main_IMU2AEGDI.py"**
 5. Evaluate the performance of included algorithms for soft biometrics: **python "./main/main_Benchmark.py"**
+## Example Results
+| **Method**                          | **Age Group**                 |
+|:-----------------------------------:|:-----------------------------:|
+| Hand\-crated Feature \+ KNN         | 82\.97\\%                     |
+| Hand\-crated Feature \+ NB          | 42\.20\\%                     |
+| Hand\-crated Feature \+ SVM         | 71\.30\\%                     |
+| Hand\-crated Feature \+ Ensemble    | 71\.89\\%                     |
+| Hand\-crated Feature \+ DT          | 44\.48\\%                     |
+| Hand\-crated Feature \+ DA          | 48\.93\\%                     |
+| Hand\-crated Feature \+ KAM         | 62\.39\\%                     |
+| Autocorrelation Feature \+ KNN      | 86\.72\\%                     |
+| Autocorrelation Feature \+ NB       | 40\.92\\%                     |
+| Autocorrelation Feature \+ SVM      | 73\.24\\%                     |
+| Autocorrelation Feature \+ Ensemble | 67\.79\\%                     |
+| Autocorrelation Feature \+ DT       | 43\.01\\%                     |
+| Autocorrelation Feature \+ DA       | 49\.06\\%                     |
+| Autocorrelation Feature \+ KAM      | 69\.98\\%                     |
+| Combined Feature \+ KNN             | \\textbf\{91\.86\\% \(3rd\)\} |
+| Combined Feature \+ NB              | 47\.07\\%                     |
+| Combined Feature \+ SVM             | 80\.90\\%                     |
+| Combined Feature \+ Ensemble        | 77\.35\\%                     |
+| Combined Feature \+ DT              | 51\.19\\%                     |
+| Combined Feature \+ DA              | 59\.31\\%                     |
+| Combined Feature \+ KAM             | 73\.92\\%                     |
+| AE\-GDI \+ 2D\-CNN                  | 53\.76\\%                     |
+| Original Signal \+ 1D\-CNN          | 57\.54\\%                     |
+| Original Signal \+ InceptionTime    | \\textbf\{95\.55\\% \(1st\)\} |
+| HYDRA                               | \\textbf\{92\.35\\% \(2nd\)\} |
+
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
 ## Authors and acknowledgment
