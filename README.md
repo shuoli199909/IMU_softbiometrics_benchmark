@@ -62,12 +62,11 @@ IMU_SoftBiometrics
 First, activate the local environment and then set the folder containing this README file as the current folder.  
 For Windows, execute: **python (...).py**  
 For Linux, execute: **python3 (...).py**  
-1. Transform facial videos into raw RGB traces: **python "./main/main_DataSegmentation.py"**
-2. Segment the original IMU gait signals into IMU sequences of equal length: **python "./main/main_DataSegmentation.py"**
-3. Transform segmented IMU signals into hand-crafted features: **python "./main/main_IMU2ManualFeature.py"**
-4. Transform segmented IMU signals into autocorrelation features: **python "./main/main_IMU2AutoCorrFeature.py"**
-5. Transform segmented IMU signals into AE-GDI features: **python "./main/main_IMU2AEGDI.py"**
-6. Evaluate the performance of included algorithms for soft biometrics: **python "./main/main_Benchmark.py"**
+1. Segment the original IMU gait signals into IMU sequences of equal length: **python "./main/main_DataSegmentation.py"**
+2. Transform segmented IMU signals into hand-crafted features: **python "./main/main_IMU2ManualFeature.py"**
+3. Transform segmented IMU signals into autocorrelation features: **python "./main/main_IMU2AutoCorrFeature.py"**
+4. Transform segmented IMU signals into AE-GDI features: **python "./main/main_IMU2AEGDI.py"**
+5. Evaluate the performance of included algorithms for soft biometrics: **python "./main/main_Benchmark.py"**
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
 ## Authors and acknowledgment
