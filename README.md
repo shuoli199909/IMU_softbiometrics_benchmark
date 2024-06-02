@@ -148,7 +148,6 @@ For Linux, execute: **python3 (...).py**
 | Original Signal \+ 1D\-CNN          | 16\.59                    |
 | Original Signal \+ InceptionTime    | 19\.63                    |
 | HYDRA                               | **0\.46 \(1st\)**         |
-
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
 ## Authors and acknowledgment
