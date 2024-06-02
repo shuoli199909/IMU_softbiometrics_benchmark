@@ -67,33 +67,34 @@ For Linux, execute: **python3 (...).py**
 4. Transform segmented IMU signals into AE-GDI features: **python "./main/main_IMU2AEGDI.py"**
 5. Evaluate the performance of included algorithms for soft biometrics: **python "./main/main_Benchmark.py"**
 ## Example Results
-| **Method**                          | **Age Group**                 |
+### Age Group Classification (Location: Center)
+| **Method**                          | **Age Group Classification**                 |
 |:-----------------------------------:|:-----------------------------:|
-| Hand\-crated Feature \+ KNN         | 82\.97\\%                     |
-| Hand\-crated Feature \+ NB          | 42\.20\\%                     |
-| Hand\-crated Feature \+ SVM         | 71\.30\\%                     |
-| Hand\-crated Feature \+ Ensemble    | 71\.89\\%                     |
-| Hand\-crated Feature \+ DT          | 44\.48\\%                     |
-| Hand\-crated Feature \+ DA          | 48\.93\\%                     |
-| Hand\-crated Feature \+ KAM         | 62\.39\\%                     |
-| Autocorrelation Feature \+ KNN      | 86\.72\\%                     |
-| Autocorrelation Feature \+ NB       | 40\.92\\%                     |
-| Autocorrelation Feature \+ SVM      | 73\.24\\%                     |
-| Autocorrelation Feature \+ Ensemble | 67\.79\\%                     |
-| Autocorrelation Feature \+ DT       | 43\.01\\%                     |
-| Autocorrelation Feature \+ DA       | 49\.06\\%                     |
-| Autocorrelation Feature \+ KAM      | 69\.98\\%                     |
-| Combined Feature \+ KNN             | \\textbf\{91\.86\\% \(3rd\)\} |
-| Combined Feature \+ NB              | 47\.07\\%                     |
-| Combined Feature \+ SVM             | 80\.90\\%                     |
-| Combined Feature \+ Ensemble        | 77\.35\\%                     |
-| Combined Feature \+ DT              | 51\.19\\%                     |
-| Combined Feature \+ DA              | 59\.31\\%                     |
-| Combined Feature \+ KAM             | 73\.92\\%                     |
-| AE\-GDI \+ 2D\-CNN                  | 53\.76\\%                     |
-| Original Signal \+ 1D\-CNN          | 57\.54\\%                     |
-| Original Signal \+ InceptionTime    | \\textbf\{95\.55\\% \(1st\)\} |
-| HYDRA                               | \\textbf\{92\.35\\% \(2nd\)\} |
+| Hand\-crated Feature \+ KNN         | 82\.97\%                     |
+| Hand\-crated Feature \+ NB          | 42\.20\%                     |
+| Hand\-crated Feature \+ SVM         | 71\.30\%                     |
+| Hand\-crated Feature \+ Ensemble    | 71\.89\%                     |
+| Hand\-crated Feature \+ DT          | 44\.48\%                     |
+| Hand\-crated Feature \+ DA          | 48\.93\%                     |
+| Hand\-crated Feature \+ KAM         | 62\.39\%                     |
+| Autocorrelation Feature \+ KNN      | 86\.72\%                     |
+| Autocorrelation Feature \+ NB       | 40\.92\%                     |
+| Autocorrelation Feature \+ SVM      | 73\.24\%                     |
+| Autocorrelation Feature \+ Ensemble | 67\.79\%                     |
+| Autocorrelation Feature \+ DT       | 43\.01\%                     |
+| Autocorrelation Feature \+ DA       | 49\.06\%                     |
+| Autocorrelation Feature \+ KAM      | 69\.98\%                     |
+| Combined Feature \+ KNN             | **91\.86\% \(3rd\)**
+| Combined Feature \+ NB              | 47\.07\%                     |
+| Combined Feature \+ SVM             | 80\.90\%                     |
+| Combined Feature \+ Ensemble        | 77\.35\%                     |
+| Combined Feature \+ DT              | 51\.19\%                     |
+| Combined Feature \+ DA              | 59\.31\%                     |
+| Combined Feature \+ KAM             | 73\.92\%                     |
+| AE\-GDI \+ 2D\-CNN                  | 53\.76\%                     |
+| Original Signal \+ 1D\-CNN          | 57\.54\%                     |
+| Original Signal \+ InceptionTime    | **95\.55\% \(1st\)**
+| HYDRA                               | **92\.35\% \(2nd\)**
 
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
