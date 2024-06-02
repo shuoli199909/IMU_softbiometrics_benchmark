@@ -67,7 +67,7 @@ For Linux, execute: **python3 (...).py**
 4. Transform segmented IMU signals into AE-GDI features: **python "./main/main_IMU2AEGDI.py"**
 5. Evaluate the performance of included algorithms for soft biometrics: **python "./main/main_Benchmark.py"**
 ## Example Results
-### Age Group Classification (Location: Center)
+### Age Group Classification (IMU Location: Center)
 | **Method**                          | **Age Group Classification**                 |
 |:-----------------------------------:|:-----------------------------:|
 | Hand\-crated Feature \+ KNN         | 82\.97\%                     |
@@ -95,6 +95,34 @@ For Linux, execute: **python3 (...).py**
 | Original Signal \+ 1D\-CNN          | 57\.54\%                     |
 | Original Signal \+ InceptionTime    | **95\.55\% \(1st\)**
 | HYDRA                               | **92\.35\% \(2nd\)**
+### Gender Estimation (IMU Location: Center)
+| **Method**                          | **Age Group Classification**                 |
+|:-----------------------------------:|:-----------------------------:|
+| Hand\-crated Feature \+ KNN         | 88\.43\%                     |
+| Hand\-crated Feature \+ NB          | 62\.83\%                     |
+| Hand\-crated Feature \+ SVM         | 83\.16\%                     |
+| Hand\-crated Feature \+ Ensemble    | 83\.32\%                     |
+| Hand\-crated Feature \+ DT          | 67\.98\%                     |
+| Hand\-crated Feature \+ DA          | 73\.12\%                     |
+| Hand\-crated Feature \+ KAM         | 79\.66\%                     |
+| Autocorrelation Feature \+ KNN      | 92\.65\%                     |
+| Autocorrelation Feature \+ NB       | 77\.00\%                     |
+| Autocorrelation Feature \+ SVM      | 86\.80\%                     |
+| Autocorrelation Feature \+ Ensemble | 84\.67\%                     |
+| Autocorrelation Feature \+ DT       | 75\.51\%                     |
+| Autocorrelation Feature \+ DA       | 79\.77\%                     |
+| Autocorrelation Feature \+ KAM      | 86\.41\%                     |
+| Combined Feature \+ KNN             | **96\.48\% \(3rd\)** |
+| Combined Feature \+ NB              | 71\.42\%                     |
+| Combined Feature \+ SVM             | 83\.41\%                     |
+| Combined Feature \+ Ensemble        | 88\.14\%                     |
+| Combined Feature \+ DT              | 77\.99\%                     |
+| Combined Feature \+ DA              | 82\.35\%                     |
+| Combined Feature \+ KAM             | 89\.38\%                     |
+| AE\-GDI \+ 2D\-CNN                  | 60\.69\%                     |
+| Original Signal \+ 1D\-CNN          | 85\.42\%                     |
+| Original Signal \+ InceptionTime    | **98\.69\% \(1st\)** |
+| HYDRA                               | **96\.97\% \(2nd\)** |
 
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
